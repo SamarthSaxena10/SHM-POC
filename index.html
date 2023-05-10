@@ -5,29 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHM</title>
-    <script type="module">
-      import { create } from "ipfs-http-client";
-      const ipfs = create();
-      const connectButton = document.getElementById("connectButton");
-
-      async function connectWallet() {
-        if (window.ethereum) {
-          try {
-            // Request access to the user's MetaMask accounts
-            await window.ethereum.enable();
-            console.log("Wallet connected:", window.ethereum.selectedAddress);
-          } catch (error) {
-            console.error("Failed to connect wallet:", error);
-          }
-        } else {
-          console.error("MetaMask not detected.");
-        }
-      }
-
-      connectButton.addEventListener("click", connectWallet);
-    </script>
   </head>
   <body>
-    <button id="connectButton">Connect Wallet</button>
+    <button id="connectWalletButton">Connect Wallet</button>
   </body>
+  <script src="app.js">
+    Metamaskconnection
+  </script>
 </html>
