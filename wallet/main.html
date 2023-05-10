@@ -4,10 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHM</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b8f70dafc1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Coin Change</title>
   </head>
   <body>
-    <button id="connectButton" onclick="connect()">Connect</button>
+    <!-- NAVBAR  -->
+    <div class="hamburger"></div>
+    <!-- HERO  -->
+    <section class="hero">
+      <img src="images/circle half.png" class="circle-one" />
+      <img src="images/Ellipse 2.png" class="circle-two" />
+      <div class="container">
+        <div class="split">
+          <div class="hero-left hidden">
+            <h1 class="h1">Discover the change in your coins</h1>
+            <p class="body">
+              Calculate the change needed in coins needed from a payment with a
+              Solidity smart contract.
+            </p>
+            <div class="btn-wrap">
+              <button
+                id="connectButton"
+                onclick="connect()"
+                class="btn subheading"
+              >
+                Connect Your Wallet
+              </button>
+            </div>
+          </div>
+          <div class="hero-right hidden">
+            <img src="images/hero comp.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPANY  -->
+    <section class="company hiddenb">
+      <div class="marque" id="marque-ani">
+        <div class="marque-content"></div>
+      </div>
+    </section>
+
+    <!-- BUY  -->
+    <section class="buy slide-left" id="about">
+      <div class="container">
+        <div class="split">
+          <div class="buy-left">
+            <img src="images/layout.svg" alt="" />
+          </div>
+          <div class="buy-right normalizer">
+            <h2 class="subheading">analytics</h2>
+            <h1 class="h1">Built-in analytics to track your NFTs</h1>
+            <p class="body">
+              Use our built-in analytics dashboard to pull valuable insgihts and
+              monitor the value of your Krypto portfolio over time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="index.js"></script>
   </body>
 </html>
